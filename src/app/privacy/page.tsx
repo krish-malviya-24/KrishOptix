@@ -53,8 +53,8 @@ export default function PrivacyPage() {
           </h2>
           <p className="text-sm">
             For SOC-2 audit logs, DPA (Data Processing Agreements), or GDPR inquiries, contact:{" "}
-            <a href="mailto:support@akhilenterprise.info" className="font-mono text-[#ff5722] underline">
-              support@akhilenterprise.info
+            <a href="mailto:support@krishoptix.vercel.app" className="font-mono text-[#ff5722] underline">
+              support@krishoptix.vercel.app
             </a>
           </p>
         </div>

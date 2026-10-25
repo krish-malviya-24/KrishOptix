@@ -69,7 +69,7 @@ export default function ContactSection() {
       console.error("EmailJS Error:", error);
       setSubmitStatus("error");
       setStatusMessage(
-        "Failed to transmit request. Please contact support@akhilenterprise.info directly.",
+        "Failed to transmit request. Please contact support@krishoptix.vercel.app directly.",
       );
     } finally {
       setIsSubmitting(false);
@@ -161,10 +161,10 @@ export default function ContactSection() {
               </p>
               <div>
                 <a
-                  href="mailto:support@akhilenterprise.info"
+                  href="mailto:support@krishoptix.vercel.app"
                   className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm font-semibold text-[#ff5722] hover:underline tracking-normal lowercase"
                 >
-                  support@akhilenterprise.info
+                  support@krishoptix.vercel.app
                   <span className="text-slate-400 text-xs">✓</span>
                 </a>
               </div>
