@@ -3,7 +3,7 @@ import { Resend } from "resend";
 import { render } from "@react-email/render";
 import { EmailTemplate } from "@/components/EmailTemplate";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -25,19 +25,19 @@ export async function POST(req: Request) {
     );
 
     // Send email using HTML string
-    const { data, error } = await resend.emails.send({
-      from: "KrishOptix System <support@akhilenterprise.info>",
-      to: ["founder@akhilenterprise.info"],
-      subject: `🔥 New Lead: ${name} (${planName} Plan)`,
-      html: emailHtml,
-    });
+    // const { data, error } = await resend.emails.send({
+    //   from: "KrishOptix System <support@akhilenterprise.info>",
+    //   to: ["founder@akhilenterprise.info"],
+    //   subject: `🔥 New Lead: ${name} (${planName} Plan)`,
+    //   html: emailHtml,
+    // });
 
-    if (error) {
-      console.error("Resend API Error:", error);
-      return NextResponse.json({ success: false, error }, { status: 400 });
-    }
+    // if (error) {
+    //   console.error("Resend API Error:", error);
+    //   return NextResponse.json({ success: false, error }, { status: 400 });
+    // }
 
-    return NextResponse.json({ success: true, data });
+    // return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Server Route Error:", error);
     return NextResponse.json(
